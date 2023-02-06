@@ -20,4 +20,4 @@ for i in range(n):
     print(side, end = ' ')
 if orel >= gerb: count = n - orel
 else: count = n - gerb
-print(f'Минимальное количество монет, которое нужно перевернуть --> {count}')
+print(f'\nМинимальное количество монет, которое нужно перевернуть --> {count}')
