@@ -5,3 +5,19 @@
 # Выведите минимальное количество монет, которые нужно перевернуть.
 
 # 5 -> 1 0 1 1 0
+
+from random import randint
+n = int(input('Введите количество монет: '))
+orel = 0
+gerb = 0
+count = 0
+for i in range(n):
+    side = randint(0, 1)
+    if side == 0:
+        orel += 1
+    else:
+        gerb += 1
+    print(side, end = ' ')
+if orel >= gerb: count = n - orel
+else: count = n - gerb
+print(f'Минимальное количество монет, которое нужно перевернуть --> {count}')
